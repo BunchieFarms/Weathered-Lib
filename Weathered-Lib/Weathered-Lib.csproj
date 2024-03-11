@@ -6,12 +6,12 @@
     <BaseOutputPath>bin\</BaseOutputPath>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="MongoDB.Bson" Version="2.24.0" />
-  </ItemGroup>
-
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="copy $(OutDir)Weathered-Lib.dll C:\Projects\CommonLib\" />
   </Target>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.24.0" />
+  </ItemGroup>
 
 </Project>
