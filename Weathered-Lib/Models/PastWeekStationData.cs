@@ -8,8 +8,8 @@ namespace Weathered_Lib.Models
     public class PastWeekStationData
     {
         public ObjectId _id { get; set; } = ObjectId.GenerateNewId();
-        public string StationNumber { get; set; }
-        public string StationName { get; set; }
+        public string StationNumber { get; set; } = "";
+        public string StationName { get; set; } = "";
         public string Region { get; set; } = "";
         public string Country { get; set; } = "";
         public double Latitude { get; set; }

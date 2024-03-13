@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>Weathered_Lib</RootNamespace>
     <BaseOutputPath>bin\</BaseOutputPath>
   </PropertyGroup>
@@ -12,6 +12,12 @@
 
   <ItemGroup>
     <PackageReference Include="MongoDB.Driver" Version="2.24.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="PirateWeather-DotNetLib">
+      <HintPath>..\..\CommonLib\PirateWeather-DotNetLib.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
